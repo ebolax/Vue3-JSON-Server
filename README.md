@@ -1,4 +1,4 @@
-# Vue 3 + TypeScript + ESBuild + Bootstrap 5 + LiveReload + JSON-Server Template
+# Vue 3 + TypeScript + ESBuild + Bootstrap 5 + LiveReload & JSON-Server with Express.js Template
 
 This repo contains a template to create a front-end application using Vue 3 + TypeScript with ESBuild bundler and Bootstrap 5 Framework. Also have serverside features like Express.js and JSON-Server API support. And all of them have Livereaload feature!
 
