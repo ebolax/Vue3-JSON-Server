@@ -1,5 +1,6 @@
 const esbuild = require("esbuild");
 const vuePlugin = require("esbuild-plugin-vue3");
+const fs = require('fs');
 
 const args = process.argv.slice(2);
 
@@ -16,10 +17,16 @@ esbuild.build({
     plugins: [vuePlugin()]
 });
 
+let backend_files = fs.readdirSync("src/server");
+backend_files = backend_files.map(function(el)
+{
+    return 'src/server/' + el;
+})
+
 // backend
 esbuild.build({
     platform: 'node',
-    entryPoints: ["src/server/server.ts"],
+    entryPoints: backend_files,
     bundle: false,
     watch,
     outfile: "dist/server.mjs"

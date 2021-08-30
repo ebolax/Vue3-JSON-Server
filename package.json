@@ -9,7 +9,7 @@
         "serve": "node .",
         "nodemon": "nodemon --watch dist/server.mjs --exec node .",
         "dev": "concurrently \"npm run nodemon\" \"npm run watch\" \"npm run livereload\"",
-        "livereload": "node livereload.js -d"
+        "livereload": "node livereload.js"
     },
     "keywords": [
         "esbuild",

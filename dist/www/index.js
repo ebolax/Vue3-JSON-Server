@@ -10269,7 +10269,7 @@ Component that was made reactive: `, type);
   });
 
   // sfc-template:F:\wwwroot\GITHUB\vue3-json-server\src\components\HelloWorld.vue?type=template
-  function render(_ctx, _cache) {
+  function render(_ctx, _cache, $props, $setup, $data, $options) {
     return openBlock(), createElementBlock(Fragment, null, [
       createBaseVNode("h1", null, toDisplayString(_ctx.msg), 1),
       createBaseVNode("button", {
@@ -10322,7 +10322,7 @@ Component that was made reactive: `, type);
   }, null, -1);
   var _hoisted_5 = { class: "mt-2" };
   var _hoisted_6 = /* @__PURE__ */ createBaseVNode("h2", null, "Get Users From Server", -1);
-  function render2(_ctx, _cache) {
+  function render2(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_HelloWorld = resolveComponent("HelloWorld");
     return openBlock(), createElementBlock("div", _hoisted_1, [
       createBaseVNode("div", _hoisted_2, [
