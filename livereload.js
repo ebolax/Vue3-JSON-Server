@@ -17,4 +17,4 @@ server.server.once("connection", () =>
     }, 100);
 });
 
-server.watch(__dirname + "/dist");
+server.watch("./dist");

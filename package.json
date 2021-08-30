@@ -3,12 +3,12 @@
     "version": "1.0.0",
     "description": "Vue.js 3 + JSON-Server",
     "type": "module",
-    "main": "dist/server.mjs",
+    "main": "dist/server.js",
     "scripts": {
         "build": "node esbuild.config.js prod",
         "watch": "node esbuild.config.js dev",
         "serve": "node .",
-        "nodemon": "nodemon --watch dist/server.mjs --exec node .",
+        "nodemon": "nodemon --watch dist/server.js --exec node .",
         "dev": "concurrently \"npm run nodemon\" \"npm run watch\" \"npm run livereload\"",
         "livereload": "node livereload.js"
     },

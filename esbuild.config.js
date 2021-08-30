@@ -26,5 +26,5 @@ esbuild.build({
     entryPoints: backend_files,
     bundle: false,
     watch,
-    outfile: "dist/server.mjs"
+    outfile: "dist/server.js"
 });
