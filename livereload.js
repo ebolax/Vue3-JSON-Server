@@ -1,4 +1,4 @@
-const livereload = require("livereload");
+import livereload from "livereload";
 
 const server = livereload.createServer({
     exts: [
