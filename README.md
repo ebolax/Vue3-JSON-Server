@@ -23,12 +23,12 @@ I'm using ESLint for VS Code. If you don't want use ESLint rules, just delete `.
 Note that if you have cloned this template repo via GitHub, then you'll need to change the URLs below to match _your_ repo's name:
 
 ```bash
-git clone https://github.com/ebolax/vue3-typescript-esbuild-bootstrap5
-cd vue3-typescript-esbuild-bootstrap5
+git clone https://github.com/ebolax/vue3-json-server
+cd vue3-json-server
 npm install
 
 # or
-npx degit "ebolax/vue3-typescript-esbuild-bootstrap5" myapp
+npx degit "ebolax/vue3-json-server" myapp
 cd myapp
 npm install
 ```
