@@ -79,6 +79,11 @@
         "comma-spacing": 1,
         "comma-style": [1, "last"],
         "comma-dangle": [1, "never"],
-        "no-new-wrappers": 1
+        "no-new-wrappers": 1,
+        "vue/html-indent": 0,
+        "vue/html-self-closing": 0,
+        "vue/max-attributes-per-line": 0,
+        "vue/singleline-html-element-content-newline": 0,
+        "vue/multiline-html-element-content-newline": 0
     }
 }
