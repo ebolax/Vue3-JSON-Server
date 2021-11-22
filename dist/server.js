@@ -13,4 +13,6 @@ app.use("/api", jsonserver.defaults({
   readOnly: true
 }));
 app.use("/api", jsonserver.router(path.join(__dirname, "/db.json")));
-app.listen(port, () => console.log(`Example app listening on port http://localhost:${port}`));
+app.listen(port, () => {
+  console.log(`Example app listening on port http://localhost:${port}`);
+});

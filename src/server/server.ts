@@ -10,14 +10,18 @@ const port = 8000;
 
 app.use(express.static(path.join(__dirname, "/www/")));
 
-app.get("/", (req, res) =>
-{
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/www/index.html"));
 });
 
-app.use("/api", jsonserver.defaults({
-    readOnly: true // only get requests allow
-}));
+app.use(
+    "/api",
+    jsonserver.defaults({
+        readOnly: true // only get requests allow
+    })
+);
 app.use("/api", jsonserver.router(path.join(__dirname, "/db.json")));
 
-app.listen(port, () => console.log(`Example app listening on port http://localhost:${port}`));
+app.listen(port, () => {
+    console.log(`Example app listening on port http://localhost:${port}`);
+});
